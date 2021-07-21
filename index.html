@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Live_Coding Myriam</title>
+</head>
+<body>
+    <header>
+        <h1>Editor HTML & CSS</h1>
+    </header>
+    <div>
+        <button id="b">br</button>
+        <button id="i">italic</button>
+        <button id="btn-1">Red</button>
+        <button id="btn-2">Blue</button>
+        <button id="btn-3">Fuschia</button>
+    </div>
+    <div class="textarea">
+        <textarea name="text" id="text" cols="30" rows="10" onkeyup="compte(this, '#compt')" maxlength="200" placeholder="Your code here"></textarea>
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+        <p id="compt"><strong>200</strong></p>
+    </div>
+    <div class="coding">
+        <h1>Live Coding</h1>
+        <img src="./assets/_______.gif" alt="gif">
+    </div>
+    <div>
+        <div name="live" id="live"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

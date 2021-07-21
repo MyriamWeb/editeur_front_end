@@ -1,0 +1,51 @@
+button{
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+#btn-1{
+    color: red;
+}
+#btn-2{
+    color: blue;
+}
+#btn-3{
+    color: fuchsia;
+}
+
+.textarea{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+}
+img{
+    width: 100px;
+    visibility: hidden;
+    transition: 0.5s ease-out;
+}
+.coding{
+    display: flex;
+}
+p{
+    text-align: right;
+}
+#progressContainer{
+    width: 100%;
+    background-color: white;
+}
+#progressBar{
+    width: 0.2%;
+    height: 10px;
+    background-color: green;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+#live{
+    width: 80%;
+    margin: 0 auto;
+}
