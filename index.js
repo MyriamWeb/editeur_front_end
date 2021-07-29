@@ -1,5 +1,5 @@
 const text = document.getElementById('text');
-const max = document.getElementById('text').maxLength;
+const max = 200;
 const downl = document.querySelector("img")
 const progressBar = document.getElementById('progressBar')
 const live = document.getElementById('live')
@@ -7,7 +7,16 @@ const live = document.getElementById('live')
 //********************************************Je crée le décompte de mon compteur de lettres et avec la couleur associée************************** */
 text.onkeyup = text.onkeypress = function(){
     document.getElementById('live').innerHTML = this.value;
-    document.getElementById('compt').innerHTML = max-live.textContent.length;
+
+    let backcounter = text.value.length;
+    let count = max-live.textContent.length;
+    document.getElementById('compt').innerHTML = count;
+        if (count == 0){
+            text.setAttribute('maxlength',backcounter)
+        }else{
+            text.setAttribute('maxlength','')
+        }
+
         const counter = 100*live.textContent.length/max;
         document.getElementById('progressBar').style.setProperty('width', counter+'%');
             if (counter >= 0 && counter < 35) {
